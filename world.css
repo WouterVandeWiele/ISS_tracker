@@ -1,0 +1,18 @@
+/*body{
+    background-color: #2E3E4E;
+}*/
+
+#wrapper{
+    /*background-color: #19538F;*/
+    width: 700px;
+    margin: 0 auto;
+}
+
+#outerCanvas{
+    width: 100%;
+    border:1px solid #000000;
+}
+
+#canDiv{
+    width: 100%;
+}

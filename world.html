@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html manifest="world.appcache">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="world.css">
+    <title>World</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Type in the coödinates to see them on the map </h1>
+        <form>
+            <table>
+            <tr>
+                <th colspan="2">Coördinates:</th>
+            </tr>
+            <tr> 
+                <td>Latitude:</td> <td><input id="lat" type="text"></td>
+            </tr>
+            <tr>
+                <td>Longditude:</td> <td><input id="long" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Place" onclick="placeCoor()">
+                    <input type="button" value="Clear" onclick="placeMap()">
+                    <input type="button" value="ISS" onclick="startTrack()" id="issTrackBut">
+                    <input type="button" value="test" onclick="placeDayNight()">
+                </td>
+            </tr>
+            </table>
+        </form>
+        <p id="par">
+            <!-- paragraph for debug -->
+            hello
+        </p>
+        <p id="par2">
+            <!-- paragraph for debug -->
+            hello2
+        </p>
+    </div>
+    <div id="canDiv">
+        <canvas id="outerCanvas">
+            <canvas id="InnerCanvas"></canvas>
+        </canvas>
+        <script type="text/javascript" src="world.js" ></script>
+    </div>
+</body>
+
+</html>
